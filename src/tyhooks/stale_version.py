@@ -90,6 +90,8 @@ def main() -> None:
         VersionContainingFile("pyproject.toml", regex=r"^version.*"),
         VersionContainingFile("setup.py", regex=r"^.*version\s*=.*"),
         VersionContainingFile("version.txt", regex=r"^[0-9]*.[0-9]*.*"),
+        VersionContainingFile("Chart.yaml", regex=r"^version:.*"),
+        VersionContainingFile("Cargo.toml", regex=r"^version\s*=.*"),
     )
 
     if not cwd_is_a_git_directory():

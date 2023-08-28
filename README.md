@@ -4,7 +4,7 @@
 ```yaml
 repos:
   - repo: https://github.com/t-young31/pre-commit-hooks
-    rev: 0.1.1  # Use the ref you want to point at
+    rev: 0.1.2  # Use the ref you want to point at
     hooks:
     - id: stale-version
 ```
@@ -12,8 +12,8 @@ repos:
 ## 🪝 Hooks
 
 ### [stale-version](https://github.com/t-young31/pre-commit-hooks/blob/main/src/tyhooks/stale_version.py)
-Ensures that any changes in a source directory are associated with a version
-increment. Works with Python projects and uses optional arguments. For example,
+Ensures that any changes in a source directory trigger a version
+increment. Works with {Python, Rust, Helm} projects. For example,
 to check changes against `origin/master` in `src` and `lib` directories use:
 
 ```yaml
