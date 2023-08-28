@@ -23,7 +23,7 @@ class GitBranch(str):
 def assert_has_diff(path: Path, branch: GitBranch, regex: str) -> None:
     """Assert that there is a git diff that matches the regex in a file"""
     result = run(
-        f'git diff --name-only --exit-code -G"{regex}" {branch}',
+        f"git diff --name-only --exit-code -G'{regex}' {branch}",
         stdout=PIPE,
         shell=True,
     )
@@ -91,7 +91,7 @@ def main() -> None:
         VersionContainingFile("setup.py", regex=r"^.*version\s*=.*"),
         VersionContainingFile("version.txt", regex=r"^[0-9]*.[0-9]*.*"),
         VersionContainingFile("Chart.yaml", regex=r"^version:.*"),
-        VersionContainingFile("Cargo.toml", regex=r"^version\s*=.*"),
+        VersionContainingFile("Cargo.toml", regex=r"^version.*=.*"),
     )
 
     if not cwd_is_a_git_directory():
