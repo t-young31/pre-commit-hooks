@@ -1,5 +1,5 @@
 # pre-commit-hooks
-[pre-commit](https://pre-commit.com/) hooks to run shared utilities
+[pre-commit](https://pre-commit.com/) hooks
 
 ```yaml
 repos:
@@ -9,11 +9,12 @@ repos:
     - id: stale-version
 ```
 
-## Hooks
+## 🪝 Hooks
 
 ### [stale-version](https://github.com/t-young31/pre-commit-hooks/blob/main/src/tyhooks/stale_version.py)
 Ensures that any changes in a source directory are associated with a version
-increment. Works with Python projects
+increment. Works with Python projects and uses optional arguments. For example,
+to check changes against `origin/master` in `src` and `lib` directories use:
 
 ```yaml
 - id: stale-version
@@ -22,7 +23,7 @@ increment. Works with Python projects
 - `--upstream`: Upstream git branch to check the diff against. Default: `origin/main`
 - `--dirs`: Pipe seperated list of directories to consider source directories. Default: `src`. Example: `src|lib`
 
-## Contributing
+## 🤝 Contributing
 
 - Fork this repository
 - Clone and run `make dev` to create a [venv](https://docs.python.org/3/library/venv.html)
