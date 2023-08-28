@@ -1,6 +1,6 @@
 - id: stale-version
-  name: Check stale versions
-  description: Ensure that a version has been bumped if merging to main
+  name: stale versions
+  description: Ensure that a version has been bumped if required
   entry: stale_version
   language: python
   require_serial: true
