@@ -9,7 +9,6 @@ on:
 jobs:
   pytest:
     runs-on: "ubuntu-latest"
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -23,7 +22,7 @@ jobs:
         run: make dev
 
       - name: pytest
-        run: pytest
+        run: make test
 
   pre-commit:
     strategy:

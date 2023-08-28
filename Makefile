@@ -14,4 +14,7 @@ python_version_is_39:
   		echo "Must be using Python 3.9" && exit 1; \
   	fi
 
+test:
+	pytest
+
 .SILENT: # silence all targets
