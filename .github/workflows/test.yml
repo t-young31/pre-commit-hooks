@@ -25,6 +25,7 @@ jobs:
         run: make test
 
   pre-commit:
+    if: ${{ github.event_name == 'push' }}
     strategy:
       fail-fast: true
       matrix:
