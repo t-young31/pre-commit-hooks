@@ -1,0 +1,10 @@
+- id: stale-version
+  name: Check stale versions
+  description: Ensure that a version has been bumped if merging to main
+  entry: stale_version
+  language: python
+  require_serial: true
+  pass_filenames: false
+  files: ''  # all
+  types:
+    - text
