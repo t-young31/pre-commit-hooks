@@ -35,6 +35,6 @@ repos:
         args: [--fix]
 
   - repo: https://github.com/t-young31/pre-commit-hooks
-    rev: main
+    rev: 0.1.1
     hooks:
       - id: stale-version
