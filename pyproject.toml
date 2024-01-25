@@ -1,6 +1,6 @@
 [project]
 name = "tyhooks"
-version = "0.1.3"
+version = "0.1.4"
 authors = [
   { name="Tom Young" },
 ]
@@ -22,6 +22,7 @@ dev = [
 
 [project.scripts]
 stale_version = "tyhooks.stale_version:main"
+no_todos = "tyhooks.no_todos:main"
 
 [project.urls]
 "Homepage" = "https://github.com/t-young31/pre-commit-hooks"

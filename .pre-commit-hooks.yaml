@@ -8,3 +8,13 @@
   files: ''  # all
   types:
     - text
+- id: no-todos
+  name: no todos
+  description: Ensure that are no TODO comments
+  entry: no_todos
+  language: python
+  require_serial: false
+  pass_filenames: false
+  files: ''  # all
+  types:
+    - text
