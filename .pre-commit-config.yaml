@@ -35,8 +35,8 @@ repos:
         args: [--fix]
 
   - repo: https://github.com/t-young31/pre-commit-hooks
-    rev: no_todos
+    rev: main
     hooks:
       - id: stale-version
-      #- id: no-todos
-      #  exclude: "tests"
+      - id: no-todos
+        exclude: "tests"
