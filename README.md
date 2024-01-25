@@ -7,6 +7,7 @@ repos:
     rev: 0.1.2  # Use the ref you want to point at
     hooks:
     - id: stale-version
+    - id: no-todos
 ```
 
 ## 🪝 Hooks
@@ -22,6 +23,9 @@ to check changes against `origin/master` in `src` and `lib` directories use:
 ```
 - `--upstream`: Upstream git branch to check the diff against. Default: `origin/main`
 - `--dirs`: Pipe seperated list of directories to consider source directories. Default: `src`. Example: `src|lib`
+
+### [no-todos]
+Ensures that there are no "TODO" comments anywhere in any file
 
 ## 🤝 Contributing
 

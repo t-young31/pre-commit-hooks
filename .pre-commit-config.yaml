@@ -38,3 +38,5 @@ repos:
     rev: main
     hooks:
       - id: stale-version
+      - id: no-todos
+        exclude: "tests"
