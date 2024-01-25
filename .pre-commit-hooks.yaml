@@ -14,7 +14,7 @@
   entry: no_todos
   language: python
   require_serial: false
-  pass_filenames: false
+  pass_filenames: true
   files: ''  # all
   types:
     - text
