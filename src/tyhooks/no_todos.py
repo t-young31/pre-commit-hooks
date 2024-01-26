@@ -1,7 +1,7 @@
 import re
 from argparse import ArgumentParser
 
-PATTERN = r"^.*[#|//]\s*TODO.*$"
+PATTERN = r"^.*(?:#|(?://))\s*TODO.*$"
 
 
 def main() -> None:
