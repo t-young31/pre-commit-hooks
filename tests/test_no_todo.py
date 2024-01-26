@@ -59,5 +59,5 @@ def test_has_todo(monkeypatch: pytest.MonkeyPatch) -> None:
         with open("tmp.py", "w") as file:
             print("print('hello world') # TODO: update", file=file)
 
-        with pytest.raises(SystemExit):  # Not updated the setup file so error
+        with pytest.raises(SystemExit):  # "TODO" exists
             no_todos.main()
