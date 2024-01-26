@@ -28,9 +28,9 @@ def test_divide_by_todo(monkeypatch: pytest.MonkeyPatch) -> None:
         with open("tmp.py", "w") as file:
             print(
                 """
-            todo = 1
-            done = 10 / todo
-            """,
+                todo = 1
+                done = 10 / todo
+                """,
                 file=file,
             )
 
