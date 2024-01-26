@@ -38,7 +38,7 @@ def test_divide_by_todo(monkeypatch: pytest.MonkeyPatch) -> None:
 
 
 def test_empty_comment(monkeypatch: pytest.MonkeyPatch) -> None:
-    """Checks that divisions are not confused with single-line comments"""
+    """Checks that empty comments do not get flagged"""
     monkeypatch.setattr("sys.argv", ["no_todos.py", "tmp.py"])
 
     with TemporaryDirectory() as tmp_dir:
