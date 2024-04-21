@@ -18,3 +18,13 @@
   files: ''  # all
   types:
     - text
+- id: tf-deps
+  name: terraform todos
+  description: Ensure dependency versions in terraform files have been checked
+  entry: tf_deps
+  language: python
+  require_serial: false
+  pass_filenames: true
+  files: '' # all
+  types:
+    - text

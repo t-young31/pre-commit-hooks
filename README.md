@@ -8,11 +8,12 @@ repos:
     hooks:
     - id: stale-version
     - id: no-todos
+    - id: tf-deps
 ```
 
 ## 🪝 Hooks
 
-### [stale-version](https://github.com/t-young31/pre-commit-hooks/blob/main/src/tyhooks/stale_version.py)
+### [stale-version](./src/tyhooks/stale_version.py)
 Ensures that any changes in a source directory trigger a version
 increment. Works with {Python, Rust, Helm} projects. For example,
 to check changes against `origin/master` in `src` and `lib` directories use:
@@ -24,8 +25,18 @@ to check changes against `origin/master` in `src` and `lib` directories use:
 - `--upstream`: Upstream git branch to check the diff against. Default: `origin/main`
 - `--dirs`: Pipe seperated list of directories to consider source directories. Default: `src`. Example: `src|lib`
 
-### [no-todos]
+### [no-todos](./src/tyhooks/no_todos.py)
 Ensures that there are no "TODO" comments anywhere in any file
+
+
+## [tf-deps](./src/tyhooks/tf_deps.py)
+Prompts to check updates on a schedule for pinned versions of
+dependencies in `.tf` files.
+
+```yaml
+- id: tf-deps
+  args: ["--frequency", "weekly"]  # default
+```
 
 ## 🤝 Contributing
 
