@@ -29,7 +29,7 @@ to check changes against `origin/master` in `src` and `lib` directories use:
 Ensures that there are no "TODO" comments anywhere in any file
 
 
-## [tf-deps](./src/tyhooks/tf_deps.py)
+### [tf-deps](./src/tyhooks/tf_deps.py)
 Prompts to check updates on a schedule for pinned versions of
 dependencies in `.tf` files.
 
